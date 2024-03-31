@@ -1,0 +1,29 @@
+@import "_values.scss";
+.blocktwo{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10%;
+    align-items: center;
+    .blocktwo__text {
+        display: inline-flex;
+        flex-direction: column;
+        width: 30%;
+        h1{
+            @include head(6vh);
+        }
+        p{
+          @extend %filler-text;
+          margin-bottom: 10%;
+        }
+        a {
+            color: #ED017F;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 3vh;
+            &:hover{
+                color: #5b01ed;
+            }
+        }
+    }
+}

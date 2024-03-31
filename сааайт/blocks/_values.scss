@@ -1,0 +1,24 @@
+%filler-text{
+    font-size: 1.9vh;
+    color: #727272;
+}
+@mixin head($fz){
+    font-size: $fz;
+    font-weight: 600;
+    margin: 0%;
+}
+%but{
+    background-color: #ED017F;
+    color: white;
+    font-size: 1.8vh;
+    font-weight: 400;
+    letter-spacing: 3px;
+    padding: 12px 30px 12px 30px;
+    border-radius: 5px;
+    border-color: transparent;
+    &:hover{
+        background-color: #fff;
+        color: #5b01ed;
+        border-color: #5b01ed;
+    }
+}

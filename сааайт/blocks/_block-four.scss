@@ -1,0 +1,29 @@
+@import "_values.scss";
+.blockfour {
+    font-family: "Roboto", sans-serif;
+    .blockfour__text{
+        margin-top: 5%;
+        text-align: center;
+        line-height: 5vh;
+        h1{
+            @include head(5vh);
+        }
+        p{
+            @extend %filler-text;
+        }
+    }
+    .blockfour__int{
+        margin-top: 3%;
+        text-align: center;
+        border: none;
+        .blockfour__int_area{
+            background-color: white;
+            border-color: #CCCCCC;
+            border-radius: 5px;
+            width: 20%;
+            padding: 0.75%;
+            font-size: 1.9vh;
+            margin-right: 1%;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import "_values.scss";
+.footer {
+    display: flex;
+    flex-direction: row;
+    font-family: "Roboto", sans-serif;
+    margin-top: 5%;
+    background-color: #FEF9FC;
+    padding-top: 3%;
+    justify-content: center;
+    column-gap: 7%;
+    .footer__col{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        h1{
+            @include head(2vh);
+            margin-bottom: 20%
+        }
+        p{
+          @extend %filler-text;
+        }
+        width: 10%;
+        img{
+            justify-self: flex-end;
+        }
+    }
+}
